@@ -1,0 +1,34 @@
+nav { 
+
+	font-family: PT Sans Bold;
+	font-weight: Bold;
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.content {
+
+	font-family: PT Sans Regular;
+	font-weight: Regular;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+h2 {
+
+	font-family: PT Sans Bold;
+	font-weight: Bold;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.sort-type { 
+
+	font-family: PT Sans Regular;
+	font-weight: Regular;
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
