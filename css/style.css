@@ -1,35 +1,303 @@
+
+/* BODY */
 body {
-	font-family: PT Sans Regular
+	font-family: sans-serif;
 	font-weight: regular;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-
-
-h1 { 
-	font-family: PT Sans Bold;
-	font-weight: bold;
-	font-size: 21px;
-	line-height: 26px;
-}
-
-h2 {
-	font-family: PT Sans Bold;
-	font-weight: bold;
-	font-size: 21px;
-	line-height: 21px;
-}
-
-.intrested { 
-
-	font-family: PT Sans Bold;
-	font-weight: bold;
-	font-size: 30px;
-	line-height: 24px;
-
-nav {
+	padding: 0;
 	
-	font-family: PT Sans Bold;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 26px;
+}
+.wraper {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/* HEADER */
+
+.header {
+	background-color: #ffffff;
+	height: 21px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	width: auto;
+	margin-top: -10px;
+}
+
+
+.logo {
+	width: 138px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	left: 44.25%;
+}
+
+
+.navigation {
+	width: auto;
+}
+
+#info-link {
+	margin-left: 70px;
+	margin-right: 145px;
+	float: left;
+}
+
+#photo-link {
+	float: left;
+}
+
+#hotel-link {
+
+	float: right;
+}
+
+#map-link {
+	float: right;
+	margin-right: 70px;
+	margin-left: 145px;
+}
+
+/* SLOGAN */
+
+.slogan {
+	position: relative;
+	padding-bottom: 50px;
+}
+
+
+.welcome1 {
+	position: absolute;
+	top: 75px;
+	left: 30.7%;
+}
+
+.slogan-text h1,.slogan-text p {
+	text-align: center;
+}
+
+/* MAIN */
+
+
+/* content */
+
+
+.container {
+	padding: 0;
+}
+
+.reason1 {
+	background-color: #81b3d2;
+	width: 400px;
+	height: 256px;
+	float: left;
+}
+
+.reason1 h3,
+.reason1 p {
+	text-align: center;
+}
+
+.reason1-img {
+	float: right;
+	width: 800px;
+	height: 256px;
+}
+
+.spec1 p,
+.spec1 h3,
+.spec2 p,
+.spec2 h3,
+.spec3 p,
+.spec3 h3{
+	text-align: center;
+}
+
+.spec1 {
+	width: 400px;
+	height: 330px;
+	float: left;
+	position: relative;
+}
+
+#house-icon {
+	position: absolute;
+	bottom: 198px;
+	left: 40.625%;
+}
+
+.spec1-text {
+	width: 400px;
+	height: 165px;
+	margin-top: 165px;
+}
+
+
+
+.spec2 {
+	width: 400px;
+	height: 330px;
+	float: left;
+	position: relative;
+}
+
+#burger-icon {
+	position: absolute;
+	bottom: 198px;
+	left: 40.625%;
+}
+
+.spec2-text {
+	width: 400px;
+	height: 165px;
+	margin-top: 165px;
+}
+
+
+
+
+.spec3 {
+	width: 400px;
+	height: 330px;
+	float: right;
+	position: relative;
+}
+
+#present-icon {
+	position: absolute;
+	bottom: 198px;
+	left: 40.625%;
+}
+
+.spec3-text {
+	width: 400px;
+	height: 165px;
+	margin-top: 165px;
+}
+
+
+
+
+.reason2-img {
+	float: left;
+	width: 800px;
+	height: 256px;
+}
+
+.reason2 {
+	background-color: #81b3d2;
+	width: 400px;
+	height: 256px;
+	float: right;
+}
+
+.reason2 h3,
+.reason2 p {
+	text-align: center;
+}
+
+
+
+.rtype2 {
+	background-color: #eeeeee;
+}
+
+.rtype2 h3,
+.rtype2 p {
+	text-align: center;
+}
+
+.reason3,
+.reason4 {
+	width: 400px;
+	height: 256px;
+	float: left;
+}
+
+.reason5 {
+	float: right;
+	width: 400px;
+	height: 256px;
+}
+
+.gol {
+	clear: both;
+}
+
+
+.info-section {
+	width: 100%;
+	min-height: 750px;
+	position: relative;
+}
+
+.interested {
+	width: 100%;
+	height: 288px;
+	
+	
+	
+}
+
+.interested-text {
+	margin: 0 auto;
+	padding-top: 58px;
+
+}
+
+.interested-text p {
+	text-align: center;
+}
+
+.map {
+	width: 100%;
+	height: 473px;
+	background: url(../img/map.jpg);
+}
+.form {
+	width: 565px;
+	min-height: 480px;
+	position: absolute;
+	top: 205px;
+	left: 320px;
+	background-color: white;
+}
+
+/* FOOTER */
+
+.main-footer {
+	width: 100%;
+	height: 84px;
+
+}
+.footer {
+	width: 975px;
+	height: 48px;
+	margin: 36px auto;
+	
+}
+
+
+.visit {
+	height: 48px;
+	width: 140px;
+	float: left;
+	margin-right: 255px;
+
+}
+
+.footer-social {
+	height: 48px;
+	width: 150px;
+	float: left;
+}
+
+.footer-copyright {
+	height: 48px;
+	width: 195px;
+	float: right;
+}

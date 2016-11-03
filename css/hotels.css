@@ -1,34 +1,350 @@
-nav { 
 
-	font-family: PT Sans Bold;
-	font-weight: Bold;
+/* BODY */
+body {
+	font-family: sans-serif;
+	font-weight: regular;
 	font-size: 14px;
-	line-height: 26px;
-	color: #000000;
+	line-height: 1;
+	color: #333333;
+	padding: 0;
+	
 }
 
-.content {
-
-	font-family: PT Sans Regular;
-	font-weight: Regular;
-	font-size: 14px;
-	line-height: 21px;
-	color: #ffffff;
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
 }
 
-h2 {
+/* HEADER */
 
-	font-family: PT Sans Bold;
-	font-weight: Bold;
-	font-size: 21px;
-	line-height: 26px;
-	color: #000000;
+.header {
+	background-color: #ffffff;
+	height: 21px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	margin-top: -10px;
+	width: 100%;
 }
 
-.sort-type { 
 
-	font-family: PT Sans Regular;
-	font-weight: Regular;
-	font-size: 12px;
-	line-height: 18px;
-	color: #000000;
+.logo {
+	width: 138px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	left: 44.25%;
+}
+
+
+.navigation {
+	width: auto;
+}
+
+#info-link {
+	margin-left: 70px;
+	margin-right: 145px;
+	float: left;
+}
+
+#photo-link {
+	float: left;
+}
+
+#hotel-link {
+
+	float: right;
+}
+
+#map-link {
+	float: right;
+	margin-right: 70px;
+	margin-left: 145px;
+}
+
+/* CONTENT */
+
+/* top-menu*/
+
+
+
+.top-menu {
+	width: 100%;
+	height: 217px;
+	background: url(../img/filterbackground.jpg);
+	color: white;
+}
+
+.column1 {
+	height: 100%;
+	width: 145px;
+	float: left;
+	margin-left: 72px;
+
+}
+
+.column2 {
+	height: 100%;
+	width: 170px;
+	float: left;
+	margin-left: 110px;
+}
+
+.column3 {
+	height: 100%;
+	width: 330px;
+	float: right;
+	margin-right: 72px;
+}
+.gol {
+	clear: both;
+}
+
+.column1 li,
+.column2 li,
+.column3 li {
+	list-style-type: none;
+
+}
+
+.column1 p,
+.column2 p,
+.column3 p{
+	text-align: center;
+	
+}
+
+
+/* sort-menu */
+
+.sort-menu {
+	width: 100%;
+	height: 85px;
+	border-bottom: 1px solid #e5e5e5; 
+}
+
+.found {
+	width: 115px;
+	float: left;
+	margin-left: 72px;
+}
+
+.sort-type {
+	width: 470px;
+	float: left;
+}
+
+
+.sort-type li {
+	list-style-type: none;
+	float: left;
+}
+
+.sort-type li:nth-child(1) {
+	margin-right: 40px;
+}
+
+.sort-type li:nth-child(2) {
+	margin-right: 30px;
+}
+
+.sort-type li:nth-child(3) {
+	margin-right: 30px;
+}
+
+.sort-flow {
+	width: 50px;
+	float: right;
+	margin-right: 72px;
+}
+
+
+/* result-menu */
+
+.result-menu {
+	width: 100%;
+	margin-bottom: 36px;
+
+
+}
+
+.result1 {
+	width: 100%;
+	height: 121px;
+	border-bottom: 1px solid #e5e5e5; 
+	padding-top: 28px;
+}
+
+.picture1 {
+	width: 135px;
+	height: 90px;
+	background: url(../img/amara.jpg);
+	float: left;
+	margin-left: 72px;
+}
+
+.about-hotel1 {
+	width: 365px;
+	height: 90px;
+	float: left;
+	margin-left: 30px;
+}
+
+.rating1 {
+	width: 89px;
+	height: 90px;
+	float: right;
+	margin-right: 72px;
+}
+
+.star-rating1 {
+	width: 89px;
+	height: 17px;
+	background: url(../img/4star.png);
+	margin-bottom: 52px;
+}
+
+.point-rating1 {
+	width: 89px;
+	height: 21px;
+
+}
+
+
+
+/* 2 */
+
+.result2 {
+	width: 100%;
+	height: 121px;
+	border-bottom: 1px solid #e5e5e5; 
+	padding-top: 28px;
+}
+
+.picture2 {
+	width: 135px;
+	height: 90px;
+	background: url(../img/desert.jpg);
+	float: left;
+	margin-left: 72px;
+}
+
+.about-hotel2 {
+	width: 365px;
+	height: 90px;
+	float: left;
+	margin-left: 30px;
+}
+
+
+
+
+.rating2 {
+	width: 89px;
+	height: 90px;
+	float: right;
+	margin-right: 72px;
+}
+
+.star-rating2 {
+	width: 89px;
+	height: 17px;
+	background: url(../img/2star.png) no-repeat;
+	margin-bottom: 52px;
+}
+
+.point-rating2 {
+	width: 89px;
+	height: 21px;
+
+}
+
+
+
+/* 3 */
+
+
+.result3 {
+	width: 100%;
+	height: 121px;
+	border-bottom: 1px solid #e5e5e5; 
+	padding-top: 28px;
+}
+
+.picture3 {
+	width: 135px;
+	height: 90px;
+	background: url(../img/villas.jpg);
+	float: left;
+	margin-left: 72px;
+}
+
+.about-hotel3 {
+	width: 365px;
+	height: 90px;
+	float: left;
+	margin-left: 30px;
+}
+
+
+
+
+.rating3 {
+	width: 89px;
+	height: 90px;
+	float: right;
+	margin-right: 72px;
+}
+
+.star-rating3 {
+	width: 89px;
+	height: 17px;
+	background: url(../img/3star.png) no-repeat;
+	margin-bottom: 52px;
+}
+
+.point-rating3 {
+	width: 89px;
+	height: 21px;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+.main-footer {
+	width: 100%;
+	height: 84px;
+
+}
+.footer {
+	width: 975px;
+	height: 48px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+.visit {
+	height: 48px;
+	width: 140px;
+	float: left;
+	margin-right: 255px;
+
+}
+
+.social {
+	height: 48px;
+	width: 150px;
+	float: left;
+}
+
+.copyright {
+	height: 48px;
+	width: 195px;
+	float: right;
+}
