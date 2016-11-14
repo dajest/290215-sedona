@@ -3,36 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="css/normlize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   	<body>
   		<div class="wraper">
   			<header class="header clearfix">
-
-		  			<nav class="navigation">
-		  				<div id="info-link">
-		  					<a id="current" href="#">информация</a>
-		  				</div>
-		  				<div id="photo-link">
-		  					<a href="#">фото и видео</a>
-		  				</div>
-		  				<div id="state-link">
-		  					<a href="#">карта штата</a>
-		  				</div>
-		  				<div id="hotel-link">
-		  					<a href="hotels.html">гостиницы</a>
-		  				</div>
-		  				<div class="support"></div>
-		  			</nav>
+  					<ul>
+					    <li>
+					      <a href="#">информация </a>
+					    </li>
+					    <li>
+					      <a href="#">фото и видео</a>
+					    </li>
+					    <li>
+					      <a href="#">карта штата</a>
+					    </li>
+					    <li>
+					      <a href="hotels.html">гостиницы</a>
+					    </li>
+					</ul>
+					<div class="support"></div>
 			</header>
 
 
 			<div class="slogan">
 				<div class="slogan-image">
-					<div class="welcome-back"></div>
+					<div class="welcome-back"><img src="img/background3.jpg" alt="SEDONA" width="1200" height="508"></div>
 					<div class="welcome1"></div>
+					<div class="white-shape"></div>
 				</div>
 				<div class="slogan-message">
 					<p class="slogan-p1">
@@ -50,7 +50,7 @@
 
 				<div class="reason1 block type1">
 					<h3>НАСТОЯЩИЙ<br>ГОРОДОК</h3>
-					<P>- №1 -</P>
+					<P class="n1index">- №1 -</P>
 					<p>
 					СЕДОНА - НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ,<BR>
 					ТАМ ТЕЧЕТ НАСТОЯЩАЯ ЖИЗНЬ
@@ -83,7 +83,7 @@
 
 				<div class="reason2 block type1">
 					<h3>ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</h3>
-					<P>- №2 -</P>
+					<P class="n1index">- №2 -</P>
 					<p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО
 					<BR>ВЫ ОСМЕЛИТЕСЬ
 					</P>
@@ -93,15 +93,15 @@
 
 				<div class="reason3 block type2">
 					<h3>НЕБОЛЬШАЯ<BR>ПЛОЩАДЬ</h3>
-					<P>- № -3</P>
+					<p class="n2index">- №3 -</p>
 					<P>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
 					<BR>НАХОДЯТСЯ БЛИЗКО
 					</P>
 				</div>
 
 				<div class="reason4 block type2">
-					<h3>ЕСТЬ<BR>ДОРОГА</h3>
-					<P>- №4 -</P>
+					<h3>красивая<BR>ДОРОГА</h3>
+					<p class="n2index">- №4 -</p>
 					<P>	ЕХАТЬ В СЕДОНУ ИЗ ЛАСВ-ЕГАСА СОВСЕМ
 					<BR>НЕ СКУЧНО
 					</P>
@@ -109,7 +109,7 @@
 
 				<div class="reason5 block type2">
 					<h3>МАЛО<BR>ТУРИСТОВ</h3>
-					<P>- №5 -</P>
+					<p class="n2index">- №5 -</p>
 					<P>БОЛЬШЕНСТВО ЕДИТ В ГРАД-КАНЬОН И
 					<BR>ТОЛПИТСЯ ТАМ
 					</P>
@@ -118,7 +118,7 @@
 			<div class="support"></div>	
 			</main>
 
-			<div class="logo"></div>
+			<div><a class="logo" href="index.html"></a></div>
 
 			<div class="info-section">
 
@@ -148,10 +148,10 @@
 							</label>
 
 							<div class="calendar">
-								<button class="cal-but">A</button>
+								<button type="button" class="cal-but">A</button>
 							</div>
 
-							<input id="indate"type="text" name="date" value="" placeholder="24 Апреля 2016">
+							<input id="indate" type="text" name="date" value="" placeholder="24 Апреля 2016">
 
 						</div>
 
@@ -164,7 +164,7 @@
 							</label>
 
 							<div class="calendar">
-								<button class="cal-but">A</button>
+								<button type="button" class="cal-but">A</button>
 							</div>
 
 							<input id="outdate" type="text" name="date" value="" placeholder="4 июля 2016">
@@ -179,13 +179,13 @@
 							</label>
 
 							<div class="minus-btn">
-								<button class="minus">M</button>
+								<button type="button" class="minus left-button">M</button>
 							</div>
 
 							<input id="adult-counter" type="text" name="number" value="" placeholder="2">
 
 							<div class="plus-btn">
-								<button class="plus">P</button>
+								<button type="button" class="plus">P</button>
 							</div>
 
 							<label for="kids">
@@ -193,24 +193,26 @@
 							</label>
 
 							<div class="minus-btn">
-								<button class="minus">M</button>
+								<button type="button" class="minus right-button">M</button>
 							</div>
 
 							<input type="text" name="number" value="" placeholder="0" id="kids">
 
 							<div class="plus-btn">
-								<button class="plus">P</button>
+								<button type="button" class="plus">P</button>
 							</div>
 
 						</div>
 
-						<div class="gol"></div>
+						<div class="golx"></div>
 						
 							<button class="find" id="find" href="#">НАЙТИ</button>
 						
 					</div>		
 				</form>
-				<div class="map"></div>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863326.1862794404!2d-111.95469988548633!3d34.79680397270507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1479125634399" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
 			</div>
 
 			<footer class="main-footer">
@@ -229,11 +231,13 @@
 
 			        <div class="copyright"></div>
 
-
+			        <div class="last"></div>
 
 			    </div>
     		</footer>
 		
   		</div>
+
+  		<script src="js/script.js"></script>
   	</body>
 </html>
