@@ -1,3 +1,5 @@
+				/*   ***INDEX.HTML***   */
+						
 
 						/* BODY */
 body {
@@ -49,7 +51,7 @@ body {
 }
 
 .header a:active {
-	color: #766357;
+	color: #cacaca;
 }
 
 .header ul {
@@ -337,7 +339,8 @@ body {
 
 .map {
 	width: 100%;
-	height: 473px;
+	height: 593px;
+	width: 1200px;
 }
 
 						/*   FORM   */
@@ -424,6 +427,9 @@ body {
 
 .indate input:active {
 	background: #ffffff;
+	border: 2px solid #e5e5e5;
+	width: 289px;
+	padding: 4px 0 4px 13px;
 }
 
 .calendar {
@@ -434,7 +440,7 @@ body {
 .calendar .cal-but {
 	display: inline-block;
 	background: #f2f2f2 url(../img/calendarsprite.png) no-repeat;
-	background-position: 3px 2px;
+	background-position: 0 -1px;
 	width: 40px;
 	height: 38px;
 	text-indent: -100000px;
@@ -445,11 +451,23 @@ body {
 
 .calendar .cal-but:hover {
 	background: #f2f2f2 url(../img/calendarsprite.png) no-repeat;
-	background-position: 3px -30px;
+	background-position: 0px -43px;
 	display: inline-block;
 	width: 40px;
 	height: 38px;
 	text-indent: -100000px;
+}
+
+.calendar .cal-but:active {
+	display: inline-block;
+	background: #f2f2f2 url(../img/calendarsprite.png) no-repeat;
+	background-position: 0 -85px;
+	width: 40px;
+	height: 38px;
+	text-indent: -100000px;
+	border: none;
+	cursor: pointer;
+	margin-top: -1px;
 }
 
 .indate {
@@ -492,7 +510,11 @@ body {
 
 .outdate input:active {
 	background: #ffffff;
+	border: 2px solid #e5e5e5;
+	width: 289px;
+	padding: 4px 0 4px 13px;
 }
+
 
 .calendar {
 	display: inline-block;
@@ -555,6 +577,15 @@ body {
 	text-indent: -100000px;
 }
 
+.minus-btn .minus:active {
+	display: inline-block;
+	background: #f2f2f2 url(../img/minusdwn.png) no-repeat;
+	background-position: 13px 18px;
+	width: 37px;
+	height: 38px;
+	text-indent: -100000px;
+}
+
 
 
 .counter input {
@@ -575,8 +606,12 @@ body {
 .counter input:hover {
 	background: #ebebeb;
 }
+
 .counter input:active {
 	background: #ffffff;
+	border: 2px solid #e5e5e5;
+	padding: 4px 0 4px 0;
+	width: 35px;
 }
 
 .plus-btn {
@@ -598,6 +633,14 @@ body {
 .plus-btn .plus:hover {
 	display: inline-block;
 	background: #f2f2f2 url(../img/plushvr.png) no-repeat;
+	background-position: 13px 14px;
+	width: 37px;
+	height: 38px;
+	text-indent: -100000px;
+}
+.plus-btn .plus:active {
+	display: inline-block;
+	background: #f2f2f2 url(../img/plusdwn.png) no-repeat;
 	background-position: 13px 14px;
 	width: 37px;
 	height: 38px;
@@ -636,7 +679,7 @@ body {
 
 .find:active {
 	background: #5496bd;
-	color: #94b9d2;
+	color: rgba(148, 185, 210, 0.3);
 }
 
 
@@ -650,6 +693,9 @@ body {
 	width: 100%;
 	padding-bottom: 35px;
 	padding-top: 35px;
+	position: relative;
+	z-index: 3;
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .container {
@@ -657,13 +703,7 @@ body {
 	border: none;
 }
 
-.social-btn:hover {
-	background: #669ec0 ;
-}
 
-.social-btn:active {
-	background: #5496bd;
-}
 
 .visit-link {
 	float: left;
@@ -687,13 +727,71 @@ body {
 	margin-left: 255px;
 }
 
-.social-btn {
+.social-btn1,
+.social-btn2,
+.social-btn3 {
 	display: inline-block;
 	width: 46px;
 	height: 48px;
 	background: #81b3d2;
+	color: #81b3d2;
+	position: relative;
 	text-indent: -100000px;
 }
+
+.social a:hover {
+	background: #669ec0;
+	color: #669ec0;
+}
+
+.social a:active {
+	background: #5496bd;
+}
+
+
+.social-btn1:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/tw.png) no-repeat;
+ 
+  width: 17px;
+  height: 15px;
+}
+
+.social-btn2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/fb.png) no-repeat;
+  width: 10px;
+  height: 19px;
+}
+
+.social-btn3:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) translateY(-50%);
+  background: url(../img/tube.png) no-repeat;
+  width: 20px;
+  height: 16px;
+}
+
+.social-btn3:active:after,
+.social-btn2:active:after,
+.social-btn1:active:after {
+  opacity: 0.3;
+}
+
 
 .social a:nth-child(1) {
 	margin-right: 3px;
@@ -719,13 +817,24 @@ body {
 	float: right;
 	margin-right: 103px;
 	background: url(../img/copyrightsprite.png) no-repeat;
+	background-position: -10px -123px;
+}
+
+
+.copyright:active {
+	width: 195px;
+	height: 39px;
+	float: right;
+	margin-right: 103px;
+	background: url(../img/copyrightsprite.png) no-repeat;
 	background-position: -10px -64px;
 }
 
-.social .social-btn-vk {
+.social .social-btn-tw {
 	background-image: url(../img/icon-sprite.png);
 	background-position: 42px 6px;
 }
+
 
 .social .social-btn-fb {
 	background-image: url(../img/icon-sprite.png);
@@ -747,7 +856,23 @@ body {
 
 
 
+
+
 					/*   ***HOTELS***   */
+
+/*   HEADER   */
+
+.current a {
+	color: #766357;
+}
+
+.current a:hover {
+	color: #604e43;
+}
+.current a:active {
+	color: #dbd8d5;
+}
+
 
 /* CONTENT */
 
@@ -763,7 +888,7 @@ body {
 	padding-bottom: 9px;
 }
 
-#checkbox-name {
+.checkbox-name {
 	margin-left: 13px;
 }
 
@@ -799,7 +924,7 @@ body {
 	margin-left: 109px;
 }
 
-#checkbox-name2 {
+.checkbox-name2 {
 	margin-left: 16px;
 }
 
@@ -1084,6 +1209,11 @@ body {
 	color: #81b3d2;
 }
 
+.sort-menu .number3 a:active,
+.sort-menu .number4 a:active {
+	color: #000000;
+}
+
 .sort-menu .number3 {
 	margin-right: 33px;
 }
@@ -1114,6 +1244,10 @@ body {
 
 .sort-menu .number5 a:hover {
 	background: transparent url(../img/uphvr.png) no-repeat;
+}
+
+.sort-menu .number5 a:active {
+	background: transparent url(../img/upact.png) no-repeat;
 }
 
 .sort-menu .number6 a {
@@ -1187,6 +1321,10 @@ body {
 	color: #669ec0; 
 }
 
+.about-hotel .result-title:active {
+	color: #cacaca; 
+}
+
 .result-description {
 	margin-bottom: -6px;
 }
@@ -1226,6 +1364,11 @@ body {
 	background: #669ec0;
 }
 
+.more:active {
+	background: rgb(84, 150, 189,);
+	color: rgba(255, 255, 255, 0.3)
+}
+
 .book {
 	display: inline-block;
 	text-transform: uppercase;
@@ -1242,6 +1385,11 @@ body {
 	background: #604e43;
 }
 
+.book:active {
+	background: rgb(80, 62, 51);
+	color: rgba(255, 255, 255, 0.3)
+}
+
 .rating {
 	width: 110px;
 	margin-right: 72px;
@@ -1250,27 +1398,24 @@ body {
 }
 
 .star-rating1 {
-	width: 89px;
 	height: 17px;
-	background: url(../img/4star.png) no-repeat;
+	background: url(../img/star.jpg) repeat-x;
 	margin-bottom: 50px;
 	float: right;
 }
 
 .star-rating2 {
-	float: right;
-	width: 42px;
 	height: 17px;
-	background: url(../img/2star.png) no-repeat;
+	background: url(../img/star.jpg) repeat-x;
 	margin-bottom: 50px;
+	float: right;
 }
 
 .star-rating3 {
-	float: right;
-	width: 65px;
 	height: 17px;
-	background: url(../img/3star.png) no-repeat;
+	background: url(../img/star.jpg) repeat-x;
 	margin-bottom: 50px;
+	float: right;
 }
 
 .point-rating a {
