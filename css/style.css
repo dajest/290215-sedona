@@ -425,7 +425,7 @@ body {
 	background: #ebebeb;
 }
 
-.indate input:active {
+.indate input:focus {
 	background: #ffffff;
 	border: 2px solid #e5e5e5;
 	width: 289px;
@@ -508,7 +508,7 @@ body {
 	background: #ebebeb;
 }
 
-.outdate input:active {
+.outdate input:focus {
 	background: #ffffff;
 	border: 2px solid #e5e5e5;
 	width: 289px;
@@ -607,7 +607,7 @@ body {
 	background: #ebebeb;
 }
 
-.counter input:active {
+.counter input:focus {
 	background: #ffffff;
 	border: 2px solid #e5e5e5;
 	padding: 4px 0 4px 0;
